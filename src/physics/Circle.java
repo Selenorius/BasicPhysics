@@ -7,7 +7,9 @@ public class Circle {
         this.xPosition = xPosition;
         this.yPosition = yPosition;
         this.zPosition = zPosition;
-        this.radius = radius;
+        if(radius > 0) {
+            this.radius = radius;
+        } else throw new IllegalArgumentException("Radius must be greater than 0");
     }
 
     public void setxPosition(double xPosition) {
@@ -23,7 +25,9 @@ public class Circle {
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        if(radius > 0) {
+            this.radius = radius;
+        } else throw new IllegalArgumentException("Radius must be greater than 0");
     }
 
     public double getxPosition() {
