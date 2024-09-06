@@ -3,10 +3,10 @@ package physics;
 public class Circle {
     private double xPosition, yPosition, zPosition, radius;
 
-    public Circle(double x, double y, double z, double radius) {
-        xPosition = x;
-        yPosition = y;
-        zPosition = z;
+    public Circle(double xPosition, double yPosition, double zPosition, double radius) {
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        this.zPosition = zPosition;
         this.radius = radius;
     }
 
